@@ -1,0 +1,242 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding:0;
+}
+
+h1 {
+  color:#004e89;
+}
+
+.navRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #004e89;
+}
+
+.navTitle {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #b4d4ee;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-right: 50px;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.dashLink {
+  text-decoration: none;
+  color: white;
+}
+
+.tradeFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tradeForm {
+  display: flex;
+}
+
+.formCol {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  gap: 5px;
+  width: 225px;
+}
+
+label {
+  font-weight: 800;
+  color: #242424;
+  text-align: left;
+}
+
+input, select {
+  height: 25px;
+  color: #242424;
+  background-color: white;
+  border: 1px solid #242424;
+  box-shadow: 1px 3px #23303946;
+}
+
+select {
+  height: 29px;
+  /* padding: 1px 2px; */
+}
+
+p {
+  font-weight: 200;
+  margin-top: 2px;
+  color: #242424;
+  text-align: left;
+}
+
+.confirmTrade, .dashLinkBtn {
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: whitesmoke;
+  color: #004e89;
+  border: 3px solid #004e89;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.mainLink {
+  text-decoration: none;
+  color: #004e89;
+}
+
+.dashLinkBtn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.displayContainer {
+  display: flex;
+  justify-content: center;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px 10px;
+}
+
+th {
+  background-color: #1a659ea8;
+}
+
+td {
+  /* background-color: whitesmoke; */
+  color: #233039;
+}
+
+.colorsTest {
+  color: #242424;
+  color: #18112d;
+  color: #233039;
+  color: #b4d4ee;
+  color: #004e89;
+  color: #1a659e;
+}
+
+.ledgerSell {
+  background-color: rgba(217, 76, 76, 0.512);
+}
+
+.ledgerClose {
+  background-color: rgb(217, 76, 76);
+}
+
+.ledgerBuy {
+  background-color: rgba(135, 209, 135, 0.429);
+}
+
+.ledgerOpen {
+  background-color: rgb(135, 209, 135);
+}
+
+.editDeleteBtn {
+  /* padding: 10px 20px; */
+  padding: 8px;
+  /* margin-top: 30px; */
+  background-color: whitesmoke;
+  color: #004e89;
+  border: 2px solid #004e89;
+  border-radius: 20px;
+  font-weight: bolder;
+  /* font-size: large; */
+}
+
+.linkNoDec {
+  text-decoration: none;
+  color: #004e89;
+}
+
+.tradeHeaderContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.statsCol {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5px;
+  gap: 5px;
+  width: 350px;
+}
+
+.statsInnerCol {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  margin-bottom: 20px;
+  gap: 10px;
+  width: 150px;
+}
+
+.statsLabels {
+  font-weight: 700;
+}
+
+.statsDisplayBox {
+  border: 2px solid #18112d;
+  height: 20px;
+  width: 100px;
+  padding-bottom: 1px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.detailGain, .detailLoss {
+  border: 2px solid #18112d;
+  height: 20px;
+  width: 100px;
+  padding-bottom: 1px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.detailGain {
+  background-color: rgba(135, 209, 135, 0.429);
+}
+
+.detailLoss {
+  background-color: rgba(217, 76, 76, 0.512);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.toDoUrgent {
+  background-color: rgba(135, 209, 135, 0.429);
+}
+
+.toDoEntered {
+  background-color: yellow;
+}
+
+.toDoUpdateStop {
+  background-color: rgba(217, 76, 76, 0.512);
+}
