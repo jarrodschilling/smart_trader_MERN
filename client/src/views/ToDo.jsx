@@ -107,8 +107,8 @@ const ToDo = (props) => {
                         <th>Total Value</th>
                         <th>Shaper</th>
                         <th>Tactical</th>
-                        <th>OPEN</th>
-                        <th>CLOSE</th>
+                        {/* <th>OPEN</th>
+                        <th>CLOSE</th> */}
                         <th>URGENT</th>
                         <th>ENTERED</th>
                         <th>EDIT</th>
@@ -138,8 +138,8 @@ const ToDo = (props) => {
                                 <td>{totalCostFmt(toDo.price, toDo.shares)}</td>
                                 <td>{toDo.shaper}</td>
                                 <td>{toDo.tactical}</td>
-                                <td>{toDo.openTrade? "Yes": ""}</td>
-                                <td>{toDo.closeTrade? "Yes": ""}</td>
+                                {/* <td>{toDo.openTrade? "Yes": ""}</td>
+                                <td>{toDo.closeTrade? "Yes": ""}</td> */}
                                 <td><button className="editDeleteBtn" onClick={()=>makeUrgentHandler(toDo._id, toDo.quickAction)}>URGENT</button></td>
                                 <td><button className="editDeleteBtn" onClick={()=>makeEnteredHandler(toDo._id, toDo.entered)}>+</button></td>
                                 <td><button className="editDeleteBtn"><Link className="linkNoDec" to={`/updatetodo/${toDo._id}`}>EDIT</Link></button></td>

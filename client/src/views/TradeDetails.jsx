@@ -48,6 +48,7 @@ const TradeDetails = (props) => {
     let headerOpenCost = formatedCost(currentOpenCost(stocksVariable))
     let headerOpenCurrentPx = formatedPrice(price)
     let headerOpenCurrentValue = formatedCost(currentValue(price, stocksVariable))
+    let forHeader = currentGainLoss(price, stocksVariable)
     let headerOpenGainLoss = formatedCost(currentGainLoss(price, stocksVariable))
     let headerOpenGainLossPct = formatedPercent(currentGainLoss(price, stocksVariable)/currentOpenCost(stocksVariable)*100)
     let headerOpenPortImp = formatedPercent(currentGainLoss(price, stocksVariable)/(portfolio)*100)
@@ -59,7 +60,7 @@ const TradeDetails = (props) => {
             {
                 openTradeTrue(stocksVariable)?
                 <TradeDetailsHeader tradePortfolioPctImpact={tradePortfolioPctImpact} tradePercentGainLoss={tradePercentGainLoss} tradeTotalSold={tradeTotalSold} tradeAvgClosePrice={tradeAvgClosePrice} tradeGainLoss={tradeGainLoss} tradeTotalCost={tradeTotalCost} tradeAvgOpenPrice={tradeAvgOpenPrice} />:
-                <OpenTradeDetailsHeader headerOpenPortImp={headerOpenPortImp} headerOpenGainLossPct={headerOpenGainLossPct} headerOpenGainLoss={headerOpenGainLoss} headerOpenCurrentValue={headerOpenCurrentValue} headerOpenCurrentPx={headerOpenCurrentPx} headerOpenPx={headerOpenPx} headerOpenShares={headerOpenShares} headerOpenCost={headerOpenCost}/>
+                <OpenTradeDetailsHeader forHeader={forHeader} headerOpenPortImp={headerOpenPortImp} headerOpenGainLossPct={headerOpenGainLossPct} headerOpenGainLoss={headerOpenGainLoss} headerOpenCurrentValue={headerOpenCurrentValue} headerOpenCurrentPx={headerOpenCurrentPx} headerOpenPx={headerOpenPx} headerOpenShares={headerOpenShares} headerOpenCost={headerOpenCost}/>
                 
             }
             <div className="displayContainer" style={{marginBottom: "100px"}}>

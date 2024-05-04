@@ -2,7 +2,7 @@ import {formatedCost, formatedPercent, formatedPrice} from "../utils/FormatFunct
 
 const OpenTradeDetailsHeader = (props) => {
 
-    const {headerOpenPx, headerOpenShares, headerOpenCost, headerOpenCurrentPx, headerOpenCurrentValue, headerOpenGainLoss, headerOpenGainLossPct, headerOpenPortImp} = props
+    const {headerOpenPx, headerOpenShares, headerOpenCost, headerOpenCurrentPx, headerOpenCurrentValue, headerOpenGainLoss, headerOpenGainLossPct, headerOpenPortImp, forHeader} = props
 
     return(
         <div className="tradeHeaderContainer">
@@ -30,10 +30,10 @@ const OpenTradeDetailsHeader = (props) => {
                         <p className="statsLabels">Current Value</p>
                     </div>
                     <div className="statsInnerCol">
-                        <p className="statsDisplayBox">{headerOpenGainLoss}</p>
-                        <p className="statsDisplayBox">{headerOpenGainLossPct}</p>
-                        <p className="statsDisplayBox">{headerOpenPortImp}</p>
-                        <p className="statsDisplayBox">{headerOpenCurrentValue}</p>
+                        <p className={`${(forHeader > 0)?'detailGain':'detailLoss'}`}>{headerOpenGainLoss}</p>
+                        <p className={`${(forHeader > 0)?'detailGain':'detailLoss'}`}>{headerOpenGainLossPct}</p>
+                        <p className={`${(forHeader > 0)?'detailGain':'detailLoss'}`}>{headerOpenPortImp}</p>
+                        <p className={`${(forHeader > 0)?'detailGain':'detailLoss'}`}>{headerOpenCurrentValue}</p>
                     </div>
                 </div>
         </div>

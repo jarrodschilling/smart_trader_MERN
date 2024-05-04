@@ -21,7 +21,7 @@ import AddToDoTrade from './views/AddToDoTrade';
 
 function App() {
   // Global variable for portfolio value
-  const startPortValue = 100000
+  const startPortValue = 1000000
   // Needed to lift state to Trade Details
   const [detailStocks, setDetailStocks] = useState([])
   const stateUpdater = (newValue) => {
